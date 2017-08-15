@@ -70,6 +70,10 @@
         changeBtn.addEventListener("click", alterarVelocidade, false);
         var canvas = document.querySelector("canvas");
         ctx = canvas.getContext("2d");
+        box.w = canvas.width;
+        box.h = canvas.height;
+        box.x = 0;
+        box.y = 0;
         setInterval(update, 100);
     }
 

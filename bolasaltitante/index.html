@@ -3,12 +3,18 @@
 
 <title> Bola Saltitante </title>
 
+<link href="style.css" rel="stylesheet" >
 <script type="text/javascript" src="main.js"></script>
 
 <div id="stage">
-  <canvas width="800" height="600" > Your browser don't
-    support html5 canvas! </canvas>
-  Vx <input id="vx" type="number" value="4" min="-10" max="10"/>
-  Vy <input id="vy" type="number" value="8" min="-10" max="10"/>
-  <button id="change"> Alterar Velocidade </button>
+  <div class="panel">  <canvas> Your browser don't
+      support html5 canvas! </canvas>
+  </div>
+  <div class="panel">
+    <ul>
+      <li> Vx <input id="vx" type="number" value="4" min="-10" max="10"/> </li>
+      <li> Vy <input id="vy" type="number" value="8" min="-10" max="10"/></li>
+      <li> <button id="change"> Alterar Velocidade </button></li>
+    </ul>
+  </div>
 </div>
