@@ -46,6 +46,7 @@
         ball.y = npt[1];
 
         render();
+        requestAnimationFrame(update);
     }
 
     function render() {
@@ -74,7 +75,7 @@
         box.h = canvas.height;
         box.x = 0;
         box.y = 0;
-        setInterval(update, 100);
+        requestAnimationFrame(update);
     }
 
     window.addEventListener("load", onLoad, false);
